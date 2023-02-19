@@ -1,7 +1,8 @@
-#Make issues
-##loading settings into the build tool
-when loading in the config file for the project the targeted profile becomes ***ALFA NETWORK AWUSFREE1***  Instead of the ** DEVICE_saa_nr-200** written in the given config.in file.
-##build issues
+# Make issues
+
+## loading settings into the build tool
+when loading in the config file for the project the targeted profile becomes ***ALFA NETWORK AWUSFREE1***  Instead of the **DEVICE_saa_nr-200** written in the given config.in file.
+## build issues
 If compiled for the default Awusfree1 it results in an image called
 ```
 openwrt-ramips-mt76x8-alfa-network_awusfree1-squashfs-sysupgrade.bin
@@ -14,7 +15,7 @@ When corrected for the Onion omega2S+  the following build error is  encountered
 ```
 attempted solutions were to remove some packages in order to strip it down but it did not resolve the situation.
 
-##Config Files
+## Config Files
 from my understanding we have three main config files for the build system to parse.
 **Feeds.conf.default**  which is our file which the custom feed gets generate from, lists the resources to be obtained and downloaded in order for the feed to be included in the build image.
 we include the feed using :
