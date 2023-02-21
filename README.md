@@ -1,4 +1,13 @@
-# Make issues
+# Image Flashing
+after generating a NR200 image we get the following error from onion:
+```
+Device omega2 not supported by this image
+Supported devices: saa,nr-200 nr-200
+Image check 'fwtool_check_image' failed.
+```
+perhaps a .bin image for should be generated specific for first time flash in order to get the proper device name? 
+
+## Make issues
 
 ## loading settings into the build tool
 when loading in the config file for the project the targeted profile becomes ***ALFA NETWORK AWUSFREE1***  Instead of the **DEVICE_saa_nr-200** written in the given config.in file.
