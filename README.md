@@ -7,6 +7,15 @@ the IPsec ui doesnt show even when selected during the image config process.
 
 after a couple of minutes of being on the device shuts down suddenly with only the power sources leds remaining on. the reset button does not work either. -> Seems like the authentication session was set to 10 minutes in the uci configs, changed to an hour. still doesnt explain why it shutsdown.
 
+serial console output before shutdown
+```
+root@NR200:/# [ 1741.034763] br-lan: port 1(eth0) entered disabled state
+[ 1741.050617] device eth0 left promiscuous mode
+[ 1741.055215] br-lan: port 1(eth0) entered disabled state
+[ 1745.969061] reboot: Restarting system
+```
+
+
 # Image Flashing
 after generating a NR200 image we get the following error from onion:
 ```
