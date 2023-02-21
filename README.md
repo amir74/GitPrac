@@ -5,7 +5,7 @@ testing the implemented functionality
 the IPsec ui doesnt show even when selected during the image config process.
 
 
-after a couple of minutes of being on the device shuts down suddenly with only the power sources leds remaining on. the reset button does not work either.
+after a couple of minutes of being on the device shuts down suddenly with only the power sources leds remaining on. the reset button does not work either. -> Seems like the authentication session was set to 10 minutes in the uci configs, changed to an hour. still doesnt explain why it shutsdown.
 
 # Image Flashing
 after generating a NR200 image we get the following error from onion:
