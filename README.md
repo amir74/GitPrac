@@ -14,6 +14,11 @@ root@NR200:/# [ 1741.034763] br-lan: port 1(eth0) entered disabled state
 [ 1741.055215] br-lan: port 1(eth0) entered disabled state
 [ 1745.969061] reboot: Restarting system
 ```
+Testing the sim dock with an ip-static sim device shows that the os does not recognize the sim card, running the simcard program also does not detec the sim card in either slots and reboots the system at the end.
+
+trying to turn on the modem regulator did not result in success, upon attempting to manually write to the corresponding pin (GPIO 40) I was met with the resource busy response.
+
+flashing the omega to the stock firmware ( v 3.3) the shutdown problem went away and i was able turn on the modem module by writing directly to the corresponding pin. However connection to I could not make the os recognize the usb hub.
 
 
 # Image Flashing
